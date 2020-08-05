@@ -1,3 +1,6 @@
+
 module.exports = {
-    publicPath: '/vue-simon-game/'
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/vue-simon-game/'
+        : '/'
 }

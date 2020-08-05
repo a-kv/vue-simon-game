@@ -104,6 +104,7 @@
                 await this.commonGameMethod();
             },
             gameOvered() {
+                this.gameOver = true;
                 this.gameStarted = false;
                 this.sequence = [];
                 this.playerSequence = [];
